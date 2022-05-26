@@ -1,0 +1,37 @@
+.middle {
+  contain : content;
+  width   : 100%;
+  position: absolute;
+  top: 513px;
+  
+  .middleTitle{
+    text-align    : left;
+    letter-spacing: 0px;
+    color         : $font-secondary-color;
+    opacity       : 1;
+    padding-left: 70px;
+    font        : normal normal normal 67px/91px Monster Clubhouse;
+  }
+
+  .contCarrusel {
+    width         : 100%;
+    height        : auto;
+    display       : flex;
+    flex-direction: row;
+    padding-bottom: 5px;  
+    justify-content: center;
+    ///////////////////////
+    text-align: center;
+    //////////////////////
+    #carruselini {
+      display: flex;
+      justify-content: center !important;
+    }
+
+    #carruselfin {
+        display: none;
+    }
+
+    
+  }
+}

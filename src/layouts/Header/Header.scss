@@ -41,6 +41,7 @@
     .menuHead {
       position: absolute;
       right: 65px;
+          height: 416px;
       
       ul {
         display: flex;
@@ -117,6 +118,60 @@
       .headform .imgHead .floatText {
           top : 134px;
           left: 261px;
+      }
+    }
+  }
+
+  
+  .imgHead {
+    background-size  : 100% 100%;
+    background-repeat: no-repeat;
+    background-size  : cover;
+    width            : 100%;
+    contain          : content;
+    height: 416px;
+    background-image: url(../../assets/bcq.jpg);
+    background-size      : cover;
+    background-position-x: center;
+    
+    .floatText {
+      position      : absolute;
+      display       : flex;
+      flex-direction: column;
+      width         : 300px;
+      top : 134px;
+      left: 261px;
+      
+      .text1 {
+        text-align    : left;
+        letter-spacing: 0px;
+        color         : #FFFFFF;
+        opacity       : 1;
+        font: normal normal normal 74px/111px Poppins;
+      }
+  
+      .text2 {
+        text-align    : left;
+        letter-spacing: 0px;
+        color         : #FFFFFF;
+        opacity       : 1;
+        height        : 79px;
+        font      : normal normal normal 67px/91px Monster Clubhouse;
+        margin-top: -10px;
+      } 
+    }
+
+    @media (max-width: 428px) {
+      .floatText {
+        top : 50px;
+        left: 56.5px;
+      }
+    }
+    
+    @media (min-width: 429px) and (max-width: 768px){ 
+      .floatText {
+        top : 50px;
+        left: 121.55px;
       }
     }
   }
