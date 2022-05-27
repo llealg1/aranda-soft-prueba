@@ -13,7 +13,7 @@ const Carousel = ({type}:any) => {
       <div className="middleTitle">Nuevas Recetas</div>
       <div className="contCarrusel">
         <ul id="carruselini" className="carrusel">
-          {!isLoading && data?.results.map( (act:any) => <Tarjet key={act.id} info={act}/>)}
+          {!isLoading ? data?.results.map( (act:any) => <Tarjet key={act.id} info={act}/>): 'Loading...'}
           
         </ul>
         <ul id="carruselfin" className="carrusel">

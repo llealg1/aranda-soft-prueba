@@ -23,7 +23,7 @@ const { data, error, isLoading }:any =  useInfoRecipe(info.id);
 
   return(<>
   {
-   !isLoading &&  
+   !isLoading?  
   <li className="tarjet"  onMouseOver={()=> handleHover()} onMouseOut={ ()=>handleHover1()} >
     <div className="plate" style={{backgroundImage: `url('${info?.image}')`}}></div>
     {
@@ -63,7 +63,7 @@ const { data, error, isLoading }:any =  useInfoRecipe(info.id);
         </div>
     </div>
     }
-  </li> 
+  </li> : "Loading.."
   }
   </>)
 }

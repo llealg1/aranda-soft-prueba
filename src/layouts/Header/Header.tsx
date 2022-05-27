@@ -6,8 +6,6 @@ import { Suspense } from "react";
 
 const Header = () => {
   return(
-  <Suspense fallback={<span>Loading...</span>}>
-    <Router>
       <div className="headForm">
         <div className="header">
           <div className="title">
@@ -33,10 +31,6 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <Navigation />
-    </Router>
-  </Suspense>
- 
   )
 }
 
