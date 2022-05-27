@@ -23,7 +23,8 @@
   .normalTarjet {
     
     .textFood {
-    
+      display: flex;
+      flex-direction: column;
       .food {
         font: normal normal normal 30px/40px Poppins;
         text-align    : center;

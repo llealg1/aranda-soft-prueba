@@ -47,26 +47,37 @@
         display: flex;
         list-style: none;
         font: normal normal normal 13px/20px Poppins;
-      }
+      
   
-      li {
-        color: $font-primary-color;
-        align-self: center;
-        text-align: left;
-        letter-spacing: 0px;
-        opacity: 1;
-        padding: 0px 15px;
-        
-        &.selected {
-          color: $font-secondary-color;
-        }
+        li {
+          display: flex;
+          list-style: none;
+          a{
+            font: normal normal normal 13px/26px Poppins;      
+            align-self: center;
+            text-align: left;
+            letter-spacing: 0px;
+            opacity: 1;
+            padding: 0px 15px;
+            text-decoration: none;
+
+            &.selected {
+              color: $font-secondary-color;
+            }
+      
+            &:hover {
+              color: $font-secondary-color;
+              text-align: left;
+              letter-spacing: 0px;
+              opacity: 1;
+              cursor: pointer;
+            }
+          }
+          
   
-        &:hover {
-          color: $font-secondary-color;
-          text-align: left;
-          letter-spacing: 0px;
-          opacity: 1;
-          cursor: pointer;
+
+          
+       
         }
       }
     }
