@@ -11,7 +11,6 @@ const instance = axios.create({
 
 export const getRecipesForType = async(type) => {
   const {data} = await instance.get(`recipes/complexSearch?apiKey=${apiToken}&type=${type}&number=4`);
-  console.log(data)
   return data;
 }
 
@@ -24,3 +23,4 @@ export const getRecipeInfo = async(id) => {
   console.log(data)
   return data;
 }
+

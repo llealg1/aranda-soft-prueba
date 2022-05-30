@@ -16,22 +16,20 @@ const { data, error, isLoading }:any =  useInfoRecipe(info.id);
   const handleHover = () =>{
     setfirst(false)
   } 
-  console.log(info.id );
+
   const handleHover1 = () =>{
     setfirst(true)
   }
 
-  return(<>
-  {
-   !isLoading?  
+  return(<>{
+  !isLoading?  
   <li className="tarjet"  onMouseOver={()=> handleHover()} onMouseOut={ ()=>handleHover1()} >
     <div className="plate" style={{backgroundImage: `url('${info?.image}')`}}></div>
     {
         first?
         <div  className="normalTarjet" id={`normal${info?.id}`}>
             <div className="textFood">
-                <span className="food">{data.sourceName}</span>
-         
+                <span className="food">{data.title.split(" ")[0] + " " + data.title.split(" ")[1] }</span>
                 <span className="foodDesc">{data.dishTypes[0]}</span>
             </div>
         <div className="score">
@@ -63,9 +61,9 @@ const { data, error, isLoading }:any =  useInfoRecipe(info.id);
         </div>
     </div>
     }
-  </li> : "Loading.."
-  }
-  </>)
+  </li> 
+  : ""
+  }</>)
 }
 
 export default Tarjet;

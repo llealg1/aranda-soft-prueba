@@ -2,7 +2,7 @@ import Carousel from "../../components/Carousel";
 
 const Kids = ()=> {
   return(
-    <Carousel type="snack" />
+    <Carousel type="snack" name="Menú infantil"/>
   )
 }
 

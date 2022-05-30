@@ -2,7 +2,7 @@ import Carousel from "../../components/Carousel";
 
 const Soup = ()=> {
   return(
-    <Carousel type="soup" />
+    <Carousel type="soup" name="Sopas" />
   )
 }
 

@@ -9,7 +9,7 @@ const queryClient = new QueryClient({
     queries:{
       staleTime: 1000000,
       cacheTime: 300000,
-      retry: 1
+      retry: 1, 
     }
   }
 });
@@ -17,6 +17,7 @@ const queryClient = new QueryClient({
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
 root.render(
   <QueryClientProvider client={queryClient}>
     <App />

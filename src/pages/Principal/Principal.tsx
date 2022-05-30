@@ -2,7 +2,7 @@ import Carousel from "../../components/Carousel";
 
 const Principal = ()=> {
   return(
-    <Carousel type="main course" />
+    <Carousel type="main course" name="Platos Principales" />
   )
 }
 
