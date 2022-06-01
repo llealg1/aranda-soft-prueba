@@ -1,6 +1,6 @@
 import Carousel from "../../components/Carousel";
 
-const Cake = ()=> {
+const Cake = () => {
   return(
     <Carousel type="dessert" name="Tortas" />
   )

@@ -1,6 +1,6 @@
 import Carousel from "../../components/Carousel";
 
-const Principal = ()=> {
+const Principal = () => {
   return(
     <Carousel type="main course" name="Platos Principales" />
   )

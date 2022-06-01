@@ -33,7 +33,7 @@
         text-align: left;
         font: normal normal normal 30px/46px Poppins;
         letter-spacing: 0.86px;
-        color: #D84A4A;
+        color: $font-secondary-color;
         opacity: 1;
       } 
     }
@@ -41,7 +41,7 @@
     .menuHead {
       position: absolute;
       right: 65px;
-          height: 416px;
+      height: 416px;
       
       ul {
         display: flex;
@@ -74,10 +74,6 @@
             }
           }
           
-  
-
-          
-       
         }
       }
     }
@@ -87,12 +83,8 @@
       width: 25px;
       background-image: url(../../assets/icons/ic_home.svg);
       background-repeat: no-repeat;
-      background-size: cover;
-      background-position-x: center;
       position: absolute;
-      @media (min-width: 453px) and (max-width: 768px) {
-
-      }
+      margin-left: 90%;
     }
 
     @media (max-width: 428px) {
@@ -108,7 +100,7 @@
       }
     }
 
-    @media (min-width: 769px) {
+    @media (min-width: 1000px) {
       .menuHead {
           display: flex;
       }
@@ -138,36 +130,36 @@
     background-size  : 100% 100%;
     background-repeat: no-repeat;
     background-size  : cover;
-    width            : 100%;
-    contain          : content;
+    width: 100%;
+    contain: content;
     height: 416px;
     background-image: url(../../assets/bcq.jpg);
-    background-size      : cover;
+    background-size: cover;
     background-position-x: center;
     
     .floatText {
-      position      : absolute;
-      display       : flex;
+      position: absolute;
+      display: flex;
       flex-direction: column;
-      width         : 300px;
+      width: 300px;
       top : 134px;
       left: 261px;
       
       .text1 {
-        text-align    : left;
+        text-align: left;
         letter-spacing: 0px;
-        color         : #FFFFFF;
-        opacity       : 1;
+        color: #FFFFFF;
+        opacity: 1;
         font: normal normal normal 74px/111px Poppins;
       }
   
       .text2 {
-        text-align    : left;
+        text-align: left;
         letter-spacing: 0px;
-        color         : #FFFFFF;
-        opacity       : 1;
-        height        : 79px;
-        font      : normal normal normal 67px/91px Monster Clubhouse;
+        color: #FFFFFF;
+        opacity: 1;
+        height: 79px;
+        font: normal normal normal 67px/91px Monster Clubhouse;
         margin-top: -10px;
       } 
     }
@@ -187,3 +179,79 @@
     }
   }
 }
+
+.menuHeads {
+  background-color: transparent;
+  display: none;
+  position: relative;
+  top: -75px;
+
+  .tarjetMenu {
+    width : 100px;
+    height: 100px;
+    background: transparent linear-gradient(180deg, #E9F1FA 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 5px 9px #8395A766;
+    border-radius: 10px;
+    opacity: 1;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    contain: content;
+  
+    .imgMenu {
+      margin-top: 13.83px;
+      width: 31px;
+      height: 33px;
+    }
+  
+    span {
+      text-align: center;
+      font: normal normal medium 13px/20px Poppins;
+      letter-spacing: 0px;
+      color: $font-primary-color;
+      opacity: 1;
+      bottom: 8.74px;
+      position: absolute;
+    }
+  }
+
+
+
+}
+
+@media (max-width: 1000px){
+  .menuHeads {
+    display: grid;
+    grid-template-columns: 16% 16% 16% 16% 16% 16% ;
+    grid-template-rows: 100%;
+    justify-content: center;
+    top: -50px;
+
+    .tarjetMenu {
+      width : 106px;
+        height: 100px;
+        margin-top: 5px;
+    }
+  }
+  
+}
+
+@media (max-width: 428px) {
+  .menuHeads {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 50% 50%;
+    justify-content: center;
+    top: -50px;
+  }
+
+  .tarjetMenu {
+    width : 76px;
+      height: 5px;
+      margin-top: 5px;
+  }
+}
+
+
+

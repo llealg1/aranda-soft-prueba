@@ -1,6 +1,6 @@
 import Carousel from "../../components/Carousel";
 
-const Soup = ()=> {
+const Soup = () => {
   return(
     <Carousel type="soup" name="Sopas" />
   )

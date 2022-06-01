@@ -5,6 +5,7 @@ import time from '../../../assets/icons/ic_time.svg'
 import chef from '../../../assets/icons/ic_chef.svg'
 import React, { useEffect, useRef, useState } from 'react';
 import { useInfoRecipe } from '../../../hook/usePosts'
+
 const Tarjet = ({info}:any) => {
 
 const { data, error, isLoading }:any =  useInfoRecipe(info.id);

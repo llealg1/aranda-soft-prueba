@@ -1,11 +1,8 @@
-import React from 'react'
 import Tarjet from './Tarjet';
-import { usePostsForType } from "../../hook/usePosts";
+import { usePostsForType } from "../../hook/usePosts";  
 
-  
 const Carousel = ({type, name = "Nuevas Recetas"}:any) => {
 
-  
   const { data, error, isLoading }:any =  usePostsForType(type);
 
   return (

@@ -1,8 +1,7 @@
 .middle {
   contain : content;
   width   : 100%;
-  position: absolute;
-  top: 513px;
+  min-height: 500px;
   
   .middleTitle{
     text-align    : left;
@@ -21,17 +20,27 @@
     padding-bottom: 5px;  
     justify-content: center;
     ///////////////////////
+    overflow-x: scroll;
+    
+    &::-webkit-scrollbar {
+      display: none;
+    }
     text-align: center;
     //////////////////////
     #carruselini {
+      min-width: 100%;
+      min-height: 500px;
       display: flex;
-      justify-content: center !important;
+      overflow-y: hidden;
+      overflow-x:auto;
+      justify-content: center;
+      
+      @media (max-width: 1000px) {
+        justify-content: start;
+      }
     }
 
-    #carruselfin {
-        display: none;
-    }
 
-    
   }
+
 }

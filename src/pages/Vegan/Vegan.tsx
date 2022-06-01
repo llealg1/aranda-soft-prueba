@@ -1,6 +1,6 @@
 import Carousel from "../../components/Carousel";
 
-const Vegan = ()=> {
+const Vegan = () => {
   return(
     <Carousel type="vegan" name="Vegetarianos" />
   )

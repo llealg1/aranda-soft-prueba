@@ -1,6 +1,6 @@
 import Carousel from "../../components/Carousel";
 
-const Kids = ()=> {
+const Kids = () => {
   return(
     <Carousel type="snack" name="Menú infantil"/>
   )

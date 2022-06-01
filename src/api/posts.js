@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 //INSERTAR TOKEN
-const apiToken = '1577d035e88544238a8c61bdba1a59cc';
+const apiToken = '0db27c5b4f6f431e810260d64f48cef3';
 const instance = axios.create({
   baseURL: `https://api.spoonacular.com/`,
   headers: {
@@ -20,7 +20,6 @@ export const getRecipesForName = async(name) => {
 }
 export const getRecipeInfo = async(id) => {
   const {data} = await instance.get(`recipes/${id}/information?apiKey=${apiToken}`);
-  console.log(data)
   return data;
 }
 
